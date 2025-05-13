@@ -32,7 +32,11 @@ class AuthorViewSet(BaseViewSet):
 
 
 class BookViewSet(BaseViewSet):
-    queryset = Book.objects.all()
+    """
+    Для уменьшения запросов к базе данных используется select_related
+    в queryset запросе.
+    """
+    queryset = Book.objects.all().select_related('author')
     list_serializer_class = BookListSerializer
     detail_serializer_class = BookDetailSerializer
     filterset_class = BookFilter
