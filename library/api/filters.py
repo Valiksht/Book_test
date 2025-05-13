@@ -12,7 +12,11 @@ class AuthorFilter(FilterSet):
 
 class BookFilter(FilterSet):
     title = CharFilter(field_name='title', lookup_expr='startswith')
+    author = CharFilter(
+        field_name='author__pk',
+        lookup_expr='startswith'
+    )
 
     class Meta:
         model = Book
-        fields = ['title']
+        fields = ['title', 'author'] 

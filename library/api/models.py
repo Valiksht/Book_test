@@ -2,6 +2,8 @@ from django.db import models
 
 
 class Author(models.Model):
+    """Модель для хранения информации об авторах книг."""
+
     name = models.CharField(max_length=255, verbose_name='ФИО автора')
     birth_date = models.DateField(verbose_name='Дата рождения')
     biography = models.TextField(verbose_name='Автобиография')
@@ -16,6 +18,8 @@ class Author(models.Model):
 
 
 class Book(models.Model):
+    """Модель для хранения информации о книгах."""
+
     author = models.ForeignKey(
         Author, on_delete=models.CASCADE, verbose_name='Автор'
     )

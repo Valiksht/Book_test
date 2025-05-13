@@ -2,12 +2,18 @@ from rest_framework import serializers
 
 from .models import Book, Author
 
+
 class AuthorSerializer(serializers.ModelSerializer):
+    '''Сериализатор для модели Author'''
+
     class Meta:
         model = Author
-        fields = ('id', 'name', 'birth_date', 'death_date')
+        fields = ('id', 'name', 'birth_date', 'biography')
+
 
 class BookListSerializer(serializers.ModelSerializer):
+    '''Сериализатор для списка книг'''
+
     author = AuthorSerializer()
 
     class Meta:
@@ -16,6 +22,8 @@ class BookListSerializer(serializers.ModelSerializer):
 
 
 class BookDetailSerializer(serializers.ModelSerializer):
+    '''Сериализатор для детальной информации о книге'''
+
     author = AuthorSerializer()
 
     class Meta:
@@ -28,4 +36,3 @@ class BookDetailSerializer(serializers.ModelSerializer):
             'preface',
             'cover',
         )
-

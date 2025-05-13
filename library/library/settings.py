@@ -3,7 +3,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-cu2kc@xru!u3$47z(xv!@4@l#wk64-mi+5!dta_s79znql9gt7'
+SECRET_KEY = (
+    'django-insecure-cu2kc@xru!u3$47z(xv!@4@l#wk64-mi+5!dta_s79znql9gt7'
+)
 
 DEBUG = True
 
@@ -112,7 +114,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ],
-
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
     ],
@@ -123,5 +124,3 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
 }
-
-
