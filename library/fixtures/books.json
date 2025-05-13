@@ -1,0 +1,57 @@
+[
+{
+  "model": "api.book",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "publication_year": 1886,
+    "title": "Война и мир",
+    "preface": "Эпопея о жизни русского общества." ,
+    "cover": "covers/d58bc522abc578948fb133a8d43769d8_KkxzpeI.jpg"
+  }
+},
+{
+  "model": "api.book",
+  "pk": 2,
+  "fields": {
+    "author": 2,
+    "publication_year": 1866,
+    "title": "Преступление и наказание",
+    "preface": "Роман о борьбе добра и зла.",
+    "cover": "covers/d58bc522abc578948fb133a8d43769d8_soukOMz.jpg"
+  }
+},
+{
+  "model": "api.book",
+  "pk": 3,
+  "fields": {
+    "author": 3,
+    "publication_year": 1896,
+    "title": "Чайка",
+    "preface": "Трагедия о взаимоотношениях между людьми.",
+    "cover": "covers/d58bc522abc578948fb133a8d43769d8.jpg"
+  }
+},
+{
+  "model": "api.book",
+  "pk": 4,
+  "fields": {
+    "author": 4,
+    "publication_year": 1862,
+    "title": "Отцы и дети",
+    "preface": "Роман о конфликте поколений.",
+    "cover": "covers/d58bc522abc578948fb133a8d43769d8_S34NSZk.jpg"
+  }
+},
+{
+  "model": "api.book",
+  "pk": 5,
+  "fields": {
+    "author": 5,
+    "publication_year": 1906,
+    "title": "Материнская любовь",
+    "preface": "Рассказ о семье и ценностях.",
+    "cover": "covers/d58bc522abc578948fb133a8d43769d8_G1hbz9x.jpg"
+  }
+}
+]
